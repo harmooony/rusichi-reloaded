@@ -244,6 +244,7 @@ header {
     border-radius: 10px;
     background-image: url(images/background.jpg);
     background-size: 100% 100%;
+    margin-top: 64px;
 }
 
 .profile_card {
@@ -254,11 +255,71 @@ header {
 .profile_card_names {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    margin-top: 162px;
 }
 
+.profile_photo {
+    width: 600px;
+    height: 600px;
+    margin: 83px 0px 83px 83px;
+}
 
+.profile_rank {
+    font-family: var(--main-font);
+    font-size: 46px;
+    margin: 0 auto;
+    margin-bottom: 76px;
+}
 
+.profile_name {
+    font-size: 96px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
 
+.profile_surname {
+    font-size: 96px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+}
+
+.profile_green {
+    background-color: var(--main-bg);
+    margin: 31px 44px 59px 44px;
+    border-radius: 10px;
+}
+
+.profile_indrate {
+    font-size: 64px;
+    font-family: var(--main-font);
+    color: white;
+    margin-left: 128px;
+}
+
+.profile_rating {
+    background-color: var(--main-bg);
+    margin: 0px 44px 59px 44px;
+    border-radius: 10px;
+}
+
+.profile_modules {
+    font-size: 48px;
+    font-family: var(--main-font);
+    margin: 58px 0px 58px 84px;
+}
+
+.profile_categories {
+    font-size: 36px;
+    font-family: var(--main-font);
+    margin-bottom: 21px;
+    margin-left: 84px;
+}
+
+.last {
+    margin-bottom: 186px;
+}
 
 
 
@@ -400,6 +461,32 @@ header {
 
     .team_main_rate {
         font-size: 24px;
+    }
+
+    .profile_card {
+        grid-template-columns: 1fr;
+    }
+
+    .profile_photo {
+        width: 200px;
+        height: 200px;
+        margin: 68px 0px 95px 35px;
+    }
+
+    .profile_rank {
+        font-size: 24px;
+    }
+
+    .profile_name {
+        font-size: 52px;
+    }
+
+    .profile_surname {
+        font-size: 52px;
+    }
+
+    .profile_green {
+        margin: 
     }
 }
 
