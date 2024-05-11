@@ -127,6 +127,7 @@ header {
 
 .contest_graph {
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .contest_teamrate {
