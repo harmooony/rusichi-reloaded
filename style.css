@@ -18,6 +18,7 @@
 :root {
     --main-bg: rgb(151, 177, 142);
     --main-font: "Roboto Condensed", sans-serif;
+    --sec-bg: rgb(105, 120, 100);
 }
 
 .page_body {z-index: 2;
@@ -267,7 +268,7 @@ header {
 
 .profile_rank {
     font-family: var(--main-font);
-    font-size: 46px;
+    font-size: 40px;
     margin: 0 auto;
     margin-bottom: 76px;
 }
@@ -320,6 +321,77 @@ header {
 .last {
     margin-bottom: 186px;
 }
+
+
+
+
+/* ADMIN */
+
+.admin_create_container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    margin: 0px 48px 0px 48px;
+    border-radius: 10px;
+}
+
+.admin_create {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sec-bg);
+    margin: 84px;
+    border-radius: 10px;
+}
+
+.admin_label {
+    font-size: 52px;
+    font-family: var(--main-font);
+    color: white;
+    margin-left: 132px;
+}
+
+.admin_p {
+    font-size: 32px;
+    font-family: var(--main-font);
+    margin: 64px 56px 0px 56px;
+}
+
+.admin_input {
+    font-size: 32px;
+    font-family: var(--main-font);
+    margin: 0px 56px 0px 56px;
+    border-radius: 10px;
+}
+
+.admin_button {
+    padding: 26px 110px 26px 110px;
+    font-family: var(--main-font);
+    font-size: 32px;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.admin_button:hover {
+    background-color: #b4b4b4;
+}
+
+.notlast {
+    margin-top: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -519,6 +591,46 @@ header {
         margin: 0 auto;
         margin-top: 12px;
     }
+
+    .admin_create {
+        margin: 20px;
+    }
+
+    .profile_green {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_create_container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_p {
+        margin-top: 32px;
+    }
+
+    .admin_button {
+        font-size: 24px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding: 12px 24px;
+    }
+
+    .profile_photo {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .admin_label {
+        font-size: 16px;
+        margin-left: 96px;
+    }
+
+    .notlast {
+        margin-top: 12px;
+    }
 }
 
 /* АДАПТИВ ДЛЯ НОУТБУКОВ */
@@ -551,6 +663,7 @@ header {
         width: 500px;
         height: 500px;
     }
+
 }
 
 /* АДАПТИВ ДЛЯ ПЛАНШЕТА В ГОРИЗОНТАЛЬНОМ СОСТОЯНИИ */
@@ -599,7 +712,7 @@ header {
     }
 
     .profile_rank {
-        font-size: 36px;
+        font-size: 28px;
         margin-bottom: 50px;
     }
 
@@ -625,6 +738,21 @@ header {
 
     .profile_categories {
         font-size: 28px;
+    }
+
+    .admin_button {
+        padding: 26px 60px 26px 60px;
+        font-family: var(--main-font);
+        font-size: 32px;
+        border-radius: 10px;
+        align-self: flex-start;
+        margin: 0 auto;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .admin_label {
+        font-size: 36px;
     }
 }
 
@@ -692,7 +820,7 @@ header {
     }
 
     .profile_rank {
-        font-size: 36px;
+        font-size: 24px;
         margin-bottom: 50px;
     }
 
@@ -740,5 +868,40 @@ header {
         font-size: 24px;
         margin: 0 auto;
         margin-top: 12px;
+    }
+
+    .admin_create {
+        margin: 20px;
+    }
+
+    .profile_green {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_create_container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_p {
+        margin-top: 32px;
+    }
+
+    .admin_button {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding: 12px 24px;
+    }
+
+    .profile_photo {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .admin_label {
+        font-size: 20px;
+        margin-left: 96px;
     }
 }

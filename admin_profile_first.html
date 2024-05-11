@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Русичи - Главная страница</title>
+  </head>
+  <body>
+    <div class="page_body">
+      <img src="images/rfGerb 2.png" class="first_l" />
+      <img src="images/rfGerb 1.png" class="second_l" />
+      <img src="images/rfGerb 3.png" class="first_r" />
+      <img src="images/rfGerb 4.png" class="second_r" />
+    </div>
+    <header>
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="header_logo">
+            <img src="" />
+            <div class="dropdown">
+              <button onclick="dropdown()" class="dropbtn">Команды</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="bears.php">Медведи</a>
+                <a href="ryisi.php">Рыси</a>
+                <a href="barsi.php">Барсы</a>
+                <a href="eagles.php">Орлы</a>
+              </div>
+            </div>
+
+            <div>
+              <a href="" class="contest_btn"> Сравнение </a>
+            </div>
+          </div>
+          <div class="header_menu">
+            <a href="">
+              <img src="images/Ellipse 1.png" class="profile_mini" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="profile_container">
+          <div class="profile_green">
+            <div class="profile_card">
+              <img src="images/Ellipse 1.png" class="profile_photo" />
+              <div class="profile_card_names">
+                <p class="profile_rank">Администратор 1-го уровня</p>
+                <p class="profile_name">Вано</p>
+                <p class="profile_surname">Ивано</p>
+              </div>
+            </div>
+          </div>
+
+        <div>
+            <p class="admin_label">Создание логинов для курсантов</p>
+            <div class="admin_create_container">
+                <div class="admin_create">
+                    <p class="admin_p">Логин</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Пароль</p>
+                    <input type="text" class="admin_input">
+                    <button class="admin_button">Создать аккаунт</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="admin_label notlast">Заполнение личных данных о курсанте</p>
+            <div class="admin_create_container">
+                <div class="admin_create">
+                    <p class="admin_p">Логин</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Достижения</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Увлечения</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Имя Фамилия</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Возраст</p>
+                    <input type="text" class="admin_input">
+                    <button class="admin_button">Добавить информацию</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="admin_label notlast">Начисление баллов</p>
+            <div class="admin_create_container">
+                <div class="admin_create">
+                    <p class="admin_p">Команда или курсант</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Логин/название</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Критерий</p>
+                    <input type="text" class="admin_input">
+                    <p class="admin_p">Количество баллов</p>
+                    <input type="text" class="admin_input">
+                    <button class="admin_button">Начислить баллы</button>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="main_scripts.js"></script>
+  </body>
+</html>
