@@ -378,6 +378,21 @@ header {
     background-color: #b4b4b4;
 }
 
+.admin_exitbutton {
+    padding: 26px 110px 26px 110px;
+    font-family: var(--main-font);
+    font-size: 32px;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.admin_exitbutton:hover {
+    background-color: #ff3d3d;
+}
+
 .notlast {
     margin-top: 48px;
 }
@@ -626,6 +641,11 @@ header {
     .admin_label {
         font-size: 16px;
         margin-left: 96px;
+    }
+
+    .admin_exitbutton {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .notlast {
@@ -903,5 +923,10 @@ header {
     .admin_label {
         font-size: 20px;
         margin-left: 96px;
+    }
+
+    .admin_exitbutton {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
