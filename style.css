@@ -4,7 +4,7 @@
 }
 
 .container {
-    max-width: 100%;
+    max-width: 390px;
     padding: 0 22px;
     margin: 0 auto;
 }
@@ -467,26 +467,57 @@ header {
         grid-template-columns: 1fr;
     }
 
+    .profile_card_names {
+        margin-top: 12px;
+    }
+
     .profile_photo {
         width: 200px;
         height: 200px;
-        margin: 68px 0px 95px 35px;
+        margin: 0 auto;
+        margin-top: 44px;
     }
 
     .profile_rank {
         font-size: 24px;
+        margin-bottom: 6px;
     }
 
     .profile_name {
         font-size: 52px;
+        margin-bottom: 6px;
     }
 
     .profile_surname {
         font-size: 52px;
+        margin-bottom: 12px;
     }
 
     .profile_green {
         margin: 12px;
+    }
+
+    .profile_rating {
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_indrate {
+        font-size: 24px;
+        margin-left: 12px;
+    }
+
+    .profile_modules {
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .profile_categories {
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 12px;
     }
 }
 
@@ -514,6 +545,11 @@ header {
 
     .contest_indrate_text {
         padding: 29px 66px 29px 66px;
+    }
+
+    .profile_photo {
+        width: 500px;
+        height: 500px;
     }
 }
 
@@ -555,6 +591,40 @@ header {
 
     .team_main {
         font-size: 48px;
+    }
+
+    .profile_photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile_rank {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .profile_name {
+        font-size: 36px;
+    }
+
+    .profile_surname {
+        font-size: 36px;
+    }
+
+    .profile_indrate {
+        font-size: 48px;
+    }
+
+    .profile_card_names {
+        margin-top: 80px;
+    }
+
+    .profile_modules {
+        font-size: 40px;
+    }
+
+    .profile_categories {
+        font-size: 28px;
     }
 }
 
@@ -614,5 +684,61 @@ header {
 
     .team_main {
         font-size: 48px;
+    }
+
+    .profile_photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile_rank {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .profile_name {
+        font-size: 36px;
+    }
+
+    .profile_surname {
+        font-size: 36px;
+    }
+
+    .profile_indrate {
+        font-size: 28px;
+        margin-left: 44px;
+    }
+
+    .profile_card_names {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .profile_card {
+        grid-template-columns: 1fr;
+    }
+
+    .profile_indrate {
+        font-size: 24px;
+        margin-left: 44px;
+    }
+
+    .profile_rating {
+        margin: 44px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_modules {
+        font-size: 36px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .profile_categories {
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 12px;
     }
 }
