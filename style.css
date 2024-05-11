@@ -70,7 +70,10 @@ header {
     margin-left: auto;
 }
 
-
+.header_logo {
+    display: flex;
+    align-items: center;
+}
 
 
 /* PROFILE */
@@ -84,6 +87,14 @@ header {
 
 
 /* CONTEST */
+
+.contest_btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+    font-family: var(--main-font);
+}
 
 .contest_container {
     display: grid;
@@ -116,6 +127,7 @@ header {
 
 .contest_graph {
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .contest_teamrate {
@@ -127,7 +139,7 @@ header {
 
 .contest_teamrate_text {
     font-size: 36px;
-    padding: 28px 184px 28px 33px;
+    padding: 30px;
     font-family: var(--main-font);
 }
 
@@ -136,6 +148,7 @@ header {
     margin-top: 16px;
     margin-bottom: 36px;
     display: flex;
+    flex-direction: column;
     background-color: var(--main-bg);
     border-radius: 15px;
 }
@@ -147,6 +160,64 @@ header {
 }
 
 
+
+/* MAIN */
+
+.team_main_container {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.team_main {
+    font-size: 64px;
+    font-family: var(--main-font);
+}
+
+.team_main_icon {
+    width: 53px;
+    height: 53px;
+}
+
+.team_main_rate {
+    font-size: 36px;
+    margin-left: 36px;
+    font-family: var(--main-font);
+}
+
+.team_main_graph_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 12px;
+    border-radius: 10px;
+    background-image: url(images/background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.team_main_legend {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 116, 116);
+    border-radius: 10px;
+    margin: 21px 0px 21px 21px;
+}
+
+.team_main_h {
+    font-size: 36px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+    margin-top: 67px;
+    margin-bottom: 48px;
+}
+
+.team_main_p {
+    font-size: 24px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
 
 
 
@@ -263,7 +334,7 @@ header {
     }
 
     .contest_teamrate_text {
-        padding: 14px 25px 14px 25px;
+        padding: 25px;
         font-size: 12px;
     }
 
@@ -292,7 +363,7 @@ header {
     }
 
     .contest_teamrate_text {
-        padding: 28px 74px 28px 74px;
+        padding: 35px;
     }
 
     .contest_indrate_text {
