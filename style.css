@@ -218,6 +218,7 @@ header {
     font-family: var(--main-font);
     margin: 0 auto;
     margin-bottom: 36px;
+    text-align: center;
 }
 
 .team_main_indrate_container {
@@ -399,11 +400,31 @@ header {
 
 
 
+/* LOGIN */
 
+.login_label {
+    font-size: 64px;
+    margin: 42px 0px 0px 56px;
+    font-family: var(--main-font);
+    color: white;
+}
 
+.login_platform {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    margin: 0px 40px 40px 40px;
+}
 
-
-
+.login_form {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/background.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    margin-top: 45px;
+}
 
 
 
@@ -650,6 +671,10 @@ header {
 
     .notlast {
         margin-top: 12px;
+    }
+
+    .login_label {
+        font-size: 40px;
     }
 }
 
@@ -928,5 +953,9 @@ header {
     .admin_exitbutton {
         padding-left: 60px;
         padding-right: 60px;
+    }
+
+    .login_label {
+        font-size: 40px;
     }
 }
