@@ -70,7 +70,10 @@ header {
     margin-left: auto;
 }
 
-
+.header_logo {
+    display: flex;
+    align-items: center;
+}
 
 
 /* PROFILE */
@@ -84,6 +87,14 @@ header {
 
 
 /* CONTEST */
+
+.contest_btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+    font-family: var(--main-font);
+}
 
 .contest_container {
     display: grid;
@@ -147,6 +158,31 @@ header {
 }
 
 
+
+/* MAIN */
+
+.team_main_container {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.team_main {
+    font-size: 64px;
+    font-family: var(--main-font);
+}
+
+.team_main_icon {
+    width: 53px;
+    height: 53px;
+}
+
+.team_main_rate {
+    font-size: 36px;
+    margin-left: 36px;
+    font-family: var(--main-font);
+}
 
 
 
