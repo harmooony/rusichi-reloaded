@@ -58,6 +58,7 @@
 header {
     background-image: url("images/background.jpg");
     background-size: 100% auto;
+    width: 100%;
 }
 
 .header_wrapper {
@@ -98,6 +99,8 @@ header {
 .contest_member {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
     background-image: url("images/background.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -225,7 +228,7 @@ header {
 
 
 
-
+/* АДАПТИВ ДЛЯ ТЕЛЕФОНОВ */
 
 @media screen and (max-width: 500px) {
 
@@ -234,41 +237,141 @@ header {
     }
 
     .first_r {
-        size: 35%;
+        display: none;
     }
     
     .first_l {
-        size: 35%;
+        display: none;
     }
     
     .second_r {
-        size: 35%;
+        display: none;
     }
     
     .second_l {
-        z-index: -1;
-        position: absolute;
-        left: 0;
-        top: 305px;
+        display: none;
     }
 
     .contest_membimg {
-        margin: 60px 39px 52px 39px;
+        margin: 60px 30px 52px 39px;
         width: 130px;
         height: 130px;
     }
 
     .contest_container {
-        gap: 12px;
+        gap: 6px;
     }
 
     .contest_teamrate_text {
-        padding: 14px 32px 14px 32px;
-        font-size: 20px;
+        padding: 14px 25px 14px 25px;
+        font-size: 12px;
     }
 
     .contest_indrate_text {
-        padding: 9px 22px 19px 21px;
-        font-size: 20px;
+        padding: 20px 18px 20px 18px;
+        font-size: 12px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ НОУТБУКОВ */
+
+@media screen and (max-width: 1480px) and (min-width: 1220px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .contest_container {
+        gap: 48px;
+    }
+
+    .contest_membimg {
+        width: 350px;
+        height: 350px;
+        margin: 95px 105px 73px 105px;
+    }
+
+    .contest_teamrate_text {
+        padding: 28px 74px 28px 74px;
+    }
+
+    .contest_indrate_text {
+        padding: 29px 66px 29px 66px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ПЛАНШЕТА В ГОРИЗОНТАЛЬНОМ СОСТОЯНИИ */
+
+@media screen and (max-width: 1220px) and (min-width: 830px) {
+
+    .container {
+        max-width: 800px;
+    }
+
+    .contest_container {
+        gap: 48px;
+    }
+
+    .contest_membimg {
+        width: 250px;
+        height: 250px;
+        margin: 95px 61px 91px 61px;
+    }
+
+    .contest_teamrate_text {
+        font-size: 24px;
+        padding: 28px 35px 28px 35px;
+    }
+
+    .contest_indrate_text {
+        font-size: 24px;
+        padding: 30px 35px 30px 35px;
+    }
+}
+
+/* АДАПТИВ ДЛЯ ПЛАНШЕТА В ВЕРТИКАЛЬНОМ СОСТОЯНИИ */
+
+@media screen and (max-width: 830px) and (min-width: 500px) {
+
+
+    .container {
+        padding: 0 10px;
+        max-width: 500px;
+    }
+
+    .first_r {
+        display: none;
+    }
+    
+    .first_l {
+        display: none;
+    }
+    
+    .second_r {
+        display: none;
+    }
+    
+    .second_l {
+        display: none;
+    }
+
+    .contest_container {
+        gap: 16px;
+    }
+
+    .contest_membimg {
+        width: 160px;
+        height: 160px;
+        margin: 85px 45px 81px 45px;
+    }
+
+    .contest_teamrate_text {
+        font-size: 16px;
+        padding: 18px 25px 18px 25px;
+    }
+
+    .contest_indrate_text {
+        font-size: 16px;
+        padding: 20px 25px 20px 25px;
     }
 }
