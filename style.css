@@ -536,7 +536,8 @@ header {
     }
 
     .contest_membimg {
-        margin: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
         width: 130px;
         height: 130px;
     }
