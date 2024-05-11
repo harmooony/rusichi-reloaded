@@ -354,6 +354,22 @@ header {
         padding: 20px 18px 20px 18px;
         font-size: 12px;
     }
+
+    .team_main_h {
+        font-size: 24px;
+    }
+    
+    .team_main_p {
+        font-size: 16px;
+    }
+
+    .team_main {
+        font-size: 36px;
+    }
+
+    .team_main_rate {
+        font-size: 24px;
+    }
 }
 
 /* АДАПТИВ ДЛЯ НОУТБУКОВ */
@@ -410,6 +426,18 @@ header {
         font-size: 24px;
         padding: 30px 35px 30px 35px;
     }
+
+    .team_main_h {
+        font-size: 36px;
+    }
+    
+    .team_main_p {
+        font-size: 16px;
+    }
+
+    .team_main {
+        font-size: 48px;
+    }
 }
 
 /* АДАПТИВ ДЛЯ ПЛАНШЕТА В ВЕРТИКАЛЬНОМ СОСТОЯНИИ */
@@ -456,5 +484,17 @@ header {
     .contest_indrate_text {
         font-size: 16px;
         padding: 20px 25px 20px 25px;
+    }
+
+    .team_main_h {
+        font-size: 24px;
+    }
+    
+    .team_main_p {
+        font-size: 16px;
+    }
+
+    .team_main {
+        font-size: 48px;
     }
 }
