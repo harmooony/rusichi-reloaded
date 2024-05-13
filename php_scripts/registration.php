@@ -21,10 +21,15 @@ if (mysqli_num_rows($query) == 0) {
     $row = mysqli_fetch_assoc($result);
     $id = $row['id'];
     mysqli_query($mysqli, "INSERT INTO инд_рейтинг (id_курсанта) VALUES ('{$id}')");
+
     header("Location: ../admin_profile_first.php");
 
 } else {
     $_SESSION['message'] = 'Такой аккаунт уже существует!';
     header("Location: ../admin_profile_first.php");
 }
+
+
+
+
 ?>

@@ -9,6 +9,7 @@ $hash_password = md5($password);
 
 if (empty(trim($login)) || empty(trim($password))) {
     $_SESSION['message'] = 'Все поля должны быть заполнены!';
+    unset($_SESSION['user']);
     header("Location: ../login.php");
     exit;
 }
@@ -27,8 +28,12 @@ if (mysqli_num_rows($result) > 0) {
         "type" => "kursant"
     ];
 
+
     if ($isFill == 0) {
-        header("Location: ../fill.php");
+        $_SESSION['message'] = 'Ваш аккаунт еще не заполнен';
+        unset($_SESSION['user']);
+        header("Location: ../login.php");
+        exit;
     } else if ($isFill == 1) {
         header("Location: ../profile.php");
     }
@@ -54,6 +59,10 @@ if (mysqli_num_rows($result) > 0) {
             header("Location: ../admin_profile_second.php");
         }
         print_r($_SESSION);
+    } else {
+        $_SESSION['message'] = 'Ведены неверные данные!';
+        header("Location: ../login.php");
+        exit;
     }
-}
+} 
 ?>

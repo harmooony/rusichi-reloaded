@@ -149,7 +149,7 @@ $surname = $row['Фамилия'];
         <div>
           <p class="admin_label notlast">Заполнение личных данных о курсанте</p>
           <div class="admin_create_container">
-            <form action="php_scripts/send_fill.php" method="post" class="admin_create">
+            <form action="php_scripts/send_fill.php" method="post" class="admin_create" enctype="multipart/form-data">
               <p class="admin_p">Логин</p>
               <input name="login" type="text" class="admin_input" list="login">
               <p class="admin_p">Достижения</p>
@@ -162,6 +162,8 @@ $surname = $row['Фамилия'];
               <input name="surname" type="text" class="admin_input">
               <p class="admin_p">Возраст</p>
               <input name="age" type="number" min="0" max="15" class="admin_input">
+              <p class="admin_p">Фотография</p>
+              <input type="file" name="image" class="admin_input">
               <input type="submit" value="Добавить информацию" class="admin_button"></input>
             </form>
           </div>
@@ -210,6 +212,20 @@ $surname = $row['Фамилия'];
 
       </div>
   </main>
+  <footer>
+    <div class="container">
+      <div class="footer_wrapper">
+        <div class="footer_left">
+          <p class="footer_text">Центр военно-спортивной подготовки «РУСИЧИ»</p>
+        </div>
+        <div class="footer_right">
+          <a href="https://vk.com/cvsprus">
+            <img src="images/vk.png" class="footer_vk">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     function update() {

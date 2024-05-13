@@ -171,6 +171,21 @@ $surname = $row['Фамилия'];
       </div>
   </main>
 
+  <footer>
+    <div class="container">
+      <div class="footer_wrapper">
+        <div class="footer_left">
+          <p class="footer_text">Центр военно-спортивной подготовки «РУСИЧИ»</p>
+        </div>
+        <div class="footer_right">
+          <a href="https://vk.com/cvsprus">
+            <img src="images/vk.png" class="footer_vk">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script>
     function update() {
       var chooseField = document.getElementById("choose");

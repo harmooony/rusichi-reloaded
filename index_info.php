@@ -145,6 +145,20 @@ if ($team_name == 'Рыси') {
       </div>
     </div>
   </main>
+  <footer>
+    <div class="container">
+      <div class="footer_wrapper">
+        <div class="footer_left">
+          <p class="footer_text">Центр военно-спортивной подготовки «РУСИЧИ»</p>
+        </div>
+        <div class="footer_right">
+          <a href="https://vk.com/cvsprus">
+            <img src="images/vk.png" class="footer_vk">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="main_scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -214,17 +228,18 @@ if ($team_name == 'Рыси') {
       }
     });
 
-    function filterTable() {
-      let search = document.getElementById('search').value.toUpperCase().trim();
-      let rows = document.getElementById('table').getElementsByTagName("tr");
+    function filterTable(search_inp, table) {
+      let search = document.getElementById(search_inp).value.toUpperCase().trim();
+      let rows = document.getElementById(table).getElementsByTagName("tr");
 
       for (let i = 1; i < rows.length; i++) {
         let firstColumnContent = rows[i].cells[0].textContent.toUpperCase();
         rows[i].style.display = firstColumnContent.includes(search) ? "" : "none";
       }
     }
-
-    document.getElementById('search').addEventListener('keyup', filterTable);
+    document.getElementById('search').addEventListener('keyup', function () {
+      filterTable('search', 'table');
+    });
   </script>
   <script>
     checkAfk();

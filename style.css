@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 .container {
     max-width: 390px;
     padding: 0 22px;
@@ -669,7 +671,7 @@ td {
         margin: 12px;
         display: flex;
         flex-direction: column;
-        height: 50vh;
+        height: 60vh;
     }
 
     .profile_indrate {
@@ -762,6 +764,7 @@ td {
     .rate_name {
         font-size: 11px;
     }
+
     .rate_num {
         font-size: 11px;
     }
@@ -869,7 +872,7 @@ td {
     }
 
     .profile_rating {
-        height: 40vh;
+        height: 50vh;
     }
 
     .profile_modules {
@@ -1082,15 +1085,53 @@ td {
         width: 80%;
     }
 
-    .logs_table table th, td{
+    .logs_table table th,
+    td {
         width: 30%;
     }
-    
+
     .rate_name {
         font-size: 14px;
     }
+
     .rate_num {
         font-size: 14px;
     }
 
+}
+
+footer {
+    background-image: url("images/background.jpg");
+    background-size: 100% auto;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer_text {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+    font-family: var(--main-font);
+}
+
+.footer_vk {
+    width: 35px;
+    height: 35px;
+    margin: 6px 0px;
+}
+
+.footer_right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    min-height: 100vh;
 }

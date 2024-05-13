@@ -87,47 +87,28 @@ require_once ("php_scripts/connect.php");
             </div>
         </div>
 
-        <div class="container">
-            <div class="team_main_indrate_container">
-                <h1 class="team_main_indrate_label">Рейтинг членов команды</h1>
-                <input type="text" class="admin_input" id="search">
-                <script>
-                    var id = 2;
-                    var id_rows = 2;
-                    var tick = 10000;
-                    var sum = 0;
-
-                    function getRows() {
-                        $.ajax({
-                            url: 'php_scripts/get_team_members_data.php',
-                            type: 'POST',
-                            data: { id: id_rows },
-                            success: function (response) {
-                                response = JSON.parse(response);
-                                $('#table').empty();
-                                $('#table').append("<tr><th class='rate_name'>Курсант</th><th class='rate_num' style='width: 50%;'>Рейтинг</th></tr>");
-                                sum = 0;
-                                $.each(response, function (i, item) {
-                                    $('#table').append("<tr style='display: none;'><th style='text-align: center; font-size: 20px'>" + item.Имя + " " + item.Фамилия +
-                                        "</th>" + "<th style='text-align: center; font-size: 20px'>" + item.Инд_рейтинг + "</th></tr>");
-                                    sum += parseInt(item.Инд_рейтинг);
-                                });
-                                console.log(sum);
-                                $('#table tr').fadeIn(1100);
-                            }
-                        });
-                        if (id_rows < 4) {
-                            id_rows++;
-                        } else if (id_rows === 4) {
-                            id_rows = 1;
-                        }
-                    }
-                </script>
-                <table id="table" style="width:100%; padding-bottom: 20px; margin-top: 20px" class="rating_output">
-                </table>
-            </div>
-        </div>
+        <script>
+            var id = 2;
+            var id_rows = 2;
+            var tick = 10000;
+            var sum = 0;
+        </script>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_left">
+            <p class="footer_text">Центр военно-спортивной подготовки «РУСИЧИ»</p>
+          </div>
+          <div class="footer_right">
+            <a href="https://vk.com/cvsprus">
+              <img src="images/vk.png" class="footer_vk">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="main_scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -180,8 +161,9 @@ require_once ("php_scripts/connect.php");
             if (existingChart) {
                 existingChart.update();
                 existingChart.resize(600, 600);
-                existingChart.resize(700, 700);
-
+                setTimeout(function () {
+                    existingChart.resize(700, 700);
+                }, 200)
             } else {
                 myChart = new Chart(ctx, {
                     type: 'doughnut',
@@ -244,12 +226,9 @@ require_once ("php_scripts/connect.php");
 
         }
 
-        getRows();
-
         setTimeout(updateChart, 100);
 
         setInterval(function () {
-            getRows();
             setTimeout(updateChart, 100);
         }, tick);      
     </script>

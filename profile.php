@@ -130,13 +130,27 @@ $jsonData = json_encode($data);
     </div>
   </main>
 
+  <footer>
+    <div class="container">
+      <div class="footer_wrapper">
+        <div class="footer_left">
+          <p class="footer_text">Центр военно-спортивной подготовки «РУСИЧИ»</p>
+        </div>
+        <div class="footer_right">
+          <a href="https://vk.com/cvsprus">
+            <img src="images/vk.png" class="footer_vk">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="main_scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script>
     var chartData = <?php echo $jsonData; ?>;
     console.log(chartData);
-
 
     var ctx = document.getElementById('mychart').getContext('2d');
     var myChart = new Chart(ctx, {
