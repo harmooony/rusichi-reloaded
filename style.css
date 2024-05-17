@@ -3,8 +3,10 @@
     padding: 0;
 }
 
+
+
 .container {
-    max-width: 100%;
+    max-width: 390px;
     padding: 0 22px;
     margin: 0 auto;
 }
@@ -18,9 +20,11 @@
 :root {
     --main-bg: rgb(151, 177, 142);
     --main-font: "Roboto Condensed", sans-serif;
+    --sec-bg: rgb(105, 120, 100);
 }
 
-.page_body {z-index: 2;
+.page_body {
+    z-index: 2;
     overflow: clip;
 }
 
@@ -70,7 +74,10 @@ header {
     margin-left: auto;
 }
 
-
+.header_logo {
+    display: flex;
+    align-items: center;
+}
 
 
 /* PROFILE */
@@ -84,6 +91,14 @@ header {
 
 
 /* CONTEST */
+
+.contest_btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+    font-family: var(--main-font);
+}
 
 .contest_container {
     display: grid;
@@ -115,8 +130,11 @@ header {
 }
 
 .contest_graph {
-    margin: 0 auto;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 50px;
 }
+
 
 .contest_teamrate {
     margin: 0 auto;
@@ -127,7 +145,7 @@ header {
 
 .contest_teamrate_text {
     font-size: 36px;
-    padding: 28px 184px 28px 33px;
+    padding: 30px;
     font-family: var(--main-font);
 }
 
@@ -136,6 +154,7 @@ header {
     margin-top: 16px;
     margin-bottom: 36px;
     display: flex;
+    flex-direction: column;
     background-color: var(--main-bg);
     border-radius: 15px;
 }
@@ -146,6 +165,326 @@ header {
     font-family: var(--main-font);
 }
 
+
+/* LOGS */
+
+.logs_table {
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    border-radius: 15px;
+}
+
+
+/* MAIN */
+
+.team_main_container {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.team_main {
+    font-size: 64px;
+    font-family: var(--main-font);
+}
+
+.team_main_icon {
+    width: 53px;
+    height: 53px;
+}
+
+.team_main_rate {
+    font-size: 36px;
+    margin-left: 36px;
+    font-family: var(--main-font);
+}
+
+.team_main_graph_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 12px;
+    border-radius: 10px;
+    background-image: url(images/background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.team_main_legend {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 116, 116);
+    border-radius: 10px;
+    margin: 21px 0px 21px 21px;
+}
+
+.team_main_h {
+    font-size: 36px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+    margin-top: 67px;
+    margin-bottom: 48px;
+}
+
+.team_main_p {
+    font-size: 24px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.team_main_graph {
+    width: 700px;
+    display: 350px;
+}
+
+.team_main_indrate_container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team_main_indrate_label {
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: var(--main-font);
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    max-width: 90%;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+}
+
+
+th,
+td {
+    border-radius: 20px;
+    padding: 7px;
+}
+
+
+/* ПРОФИЛЬ ОБЫЧНОГО КУРСАНТА */
+
+.profile_container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-image: url(images/background.jpg);
+    background-size: 100% 100%;
+    margin-top: 64px;
+}
+
+.profile_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile_card_names {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 162px;
+}
+
+.profile_photo {
+    width: 600px;
+    height: 600px;
+    margin: 83px 0px 83px 83px;
+}
+
+.profile_rank {
+    font-family: var(--main-font);
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 76px;
+}
+
+.profile_name {
+    font-size: 96px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+
+.profile_surname {
+    font-size: 96px;
+    font-family: var(--main-font);
+    margin: 0 auto;
+}
+
+.profile_green {
+    background-color: var(--main-bg);
+    margin: 31px 44px 59px 44px;
+    border-radius: 10px;
+}
+
+.profile_indrate {
+    font-size: 64px;
+    font-family: var(--main-font);
+    color: white;
+    margin-left: 128px;
+}
+
+.profile_rating {
+    background-color: var(--main-bg);
+    margin: 0px 44px 59px 44px;
+    border-radius: 10px;
+    align-items: center;
+    height: 60vh;
+}
+
+.profile_modules {
+    font-size: 48px;
+    font-family: var(--main-font);
+    margin: 50px;
+    margin-bottom: -50px;
+}
+
+.profile_categories {
+    font-size: 36px;
+    font-family: var(--main-font);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    width: 50%;
+    padding-left: 10px;
+    margin-bottom: 21px;
+    margin-left: 84px;
+}
+
+.last {
+    margin-bottom: 186px;
+}
+
+
+
+.profile_graph {
+    margin-bottom: 50px;
+    width: 400px;
+    height: 600px;
+}
+
+
+
+
+/* ADMIN */
+
+.admin_create_container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    margin: 0px 48px 0px 48px;
+    border-radius: 10px;
+}
+
+.admin_create {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sec-bg);
+    margin: 84px;
+    border-radius: 10px;
+}
+
+.admin_label {
+    font-size: 52px;
+    font-family: var(--main-font);
+    color: white;
+    margin-left: 132px;
+}
+
+.admin_p {
+    font-size: 32px;
+    font-family: var(--main-font);
+    margin: 64px 56px 0px 56px;
+}
+
+.admin_input {
+    font-size: 32px;
+    font-family: var(--main-font);
+    margin: 0px 56px 0px 56px;
+    border-radius: 10px;
+}
+
+.admin_button {
+    padding: 26px 110px 26px 110px;
+    font-family: var(--main-font);
+    font-size: 32px;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.admin_button:hover {
+    background-color: #b4b4b4;
+}
+
+.admin_exitbutton {
+    padding: 26px 110px 26px 110px;
+    font-family: var(--main-font);
+    font-size: 32px;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.admin_exitbutton:hover {
+    background-color: #ff3d3d;
+}
+
+.notlast {
+    margin-top: 48px;
+}
+
+
+
+/* LOGIN */
+
+.login_label {
+    font-size: 64px;
+    margin: 42px 0px 0px 56px;
+    font-family: var(--main-font);
+    color: white;
+}
+
+.login_platform {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    margin: 0px 40px 40px 40px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/background.jpg");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    margin-top: 45px;
+}
+
+
+.main_logo:hover {
+    cursor: pointer;
+}
 
 
 
@@ -182,48 +521,53 @@ header {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-  }
+}
 
-  .dropbtn_contest {
+.dropbtn_contest {
     font-size: 36px;
     margin-top: 64px;
-  }
+}
 
-  
-  .dropbtn:hover, .dropbtn:focus {
+
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: var(--main-bg);
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
 
-  .dropdown_contest {
+.dropdown_contest {
     position: relative;
     display: inline-block;
     margin-top: 64px;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
 
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .show {display:block;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
 
 
 
@@ -239,21 +583,22 @@ header {
     .first_r {
         display: none;
     }
-    
+
     .first_l {
         display: none;
     }
-    
+
     .second_r {
         display: none;
     }
-    
+
     .second_l {
         display: none;
     }
 
     .contest_membimg {
-        margin: 60px 30px 52px 39px;
+        margin: 0 auto;
+        margin-top: 20px;
         width: 130px;
         height: 130px;
     }
@@ -263,7 +608,7 @@ header {
     }
 
     .contest_teamrate_text {
-        padding: 14px 25px 14px 25px;
+        padding: 25px;
         font-size: 12px;
     }
 
@@ -271,6 +616,159 @@ header {
         padding: 20px 18px 20px 18px;
         font-size: 12px;
     }
+
+    .team_main_h {
+        font-size: 24px;
+    }
+
+    .team_main_p {
+        font-size: 16px;
+    }
+
+    .team_main {
+        font-size: 36px;
+    }
+
+    .team_main_rate {
+        font-size: 24px;
+    }
+
+    .profile_card {
+        grid-template-columns: 1fr;
+    }
+
+    .profile_card_names {
+        margin-top: 12px;
+    }
+
+    .profile_photo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 44px;
+    }
+
+    .profile_rank {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .profile_name {
+        font-size: 52px;
+        margin-bottom: 6px;
+    }
+
+    .profile_surname {
+        font-size: 52px;
+        margin-bottom: 12px;
+    }
+
+    .profile_green {
+        margin: 12px;
+    }
+
+    .profile_rating {
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+    }
+
+    .profile_indrate {
+        font-size: 24px;
+        margin-left: 12px;
+    }
+
+    .profile_modules {
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .profile_categories {
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+
+    .profile_graph {
+        padding-top: 30px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .admin_create {
+        margin: 20px;
+    }
+
+    .profile_green {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_create_container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_p {
+        margin-top: 32px;
+    }
+
+    .admin_button {
+        font-size: 24px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding: 12px 24px;
+    }
+
+    .profile_photo {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .admin_label {
+        font-size: 16px;
+        margin-left: 96px;
+    }
+
+    .admin_exitbutton {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .notlast {
+        margin-top: 12px;
+    }
+
+    .login_label {
+        font-size: 40px;
+    }
+
+    .contest_graph {
+        width: 30%;
+        height: 20%;
+        background-color: transparent;
+    }
+
+    .contest_container * {
+        margin-left: 0;
+    }
+
+    .team_main_graph {
+        width: 30%;
+        height: 20%;
+    }
+
+    .rate_name {
+        font-size: 11px;
+    }
+
+    .rate_num {
+        font-size: 11px;
+    }
+
 }
 
 /* АДАПТИВ ДЛЯ НОУТБУКОВ */
@@ -292,12 +790,23 @@ header {
     }
 
     .contest_teamrate_text {
-        padding: 28px 74px 28px 74px;
+        padding: 35px;
     }
 
     .contest_indrate_text {
         padding: 29px 66px 29px 66px;
     }
+
+    .profile_photo {
+        width: 500px;
+        height: 500px;
+    }
+
+    .contest_graph {
+        width: 90%;
+        height: 45%;
+    }
+
 }
 
 /* АДАПТИВ ДЛЯ ПЛАНШЕТА В ГОРИЗОНТАЛЬНОМ СОСТОЯНИИ */
@@ -327,6 +836,79 @@ header {
         font-size: 24px;
         padding: 30px 35px 30px 35px;
     }
+
+    .team_main_h {
+        font-size: 36px;
+    }
+
+    .team_main_p {
+        font-size: 16px;
+    }
+
+    .team_main {
+        font-size: 48px;
+    }
+
+    .profile_photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile_rank {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .profile_name {
+        font-size: 36px;
+    }
+
+    .profile_surname {
+        font-size: 36px;
+    }
+
+    .profile_indrate {
+        font-size: 48px;
+    }
+
+    .profile_rating {
+        height: 50vh;
+    }
+
+    .profile_modules {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .profile_categories {
+        font-size: 28px;
+        width: 80%;
+    }
+
+    .admin_button {
+        padding: 26px 60px 26px 60px;
+        font-family: var(--main-font);
+        font-size: 32px;
+        border-radius: 10px;
+        align-self: flex-start;
+        margin: 0 auto;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .admin_label {
+        font-size: 36px;
+    }
+
+    .contest_graph {
+        width: 450px;
+        height: 300px;
+    }
+
+    .profile_graph {
+        width: 450px;
+        height: 300px;
+    }
 }
 
 /* АДАПТИВ ДЛЯ ПЛАНШЕТА В ВЕРТИКАЛЬНОМ СОСТОЯНИИ */
@@ -342,15 +924,15 @@ header {
     .first_r {
         display: none;
     }
-    
+
     .first_l {
         display: none;
     }
-    
+
     .second_r {
         display: none;
     }
-    
+
     .second_l {
         display: none;
     }
@@ -374,4 +956,182 @@ header {
         font-size: 16px;
         padding: 20px 25px 20px 25px;
     }
+
+    .team_main_h {
+        font-size: 24px;
+    }
+
+    .team_main_p {
+        font-size: 16px;
+    }
+
+    .team_main {
+        font-size: 48px;
+    }
+
+    .profile_photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile_rank {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .profile_name {
+        font-size: 36px;
+    }
+
+    .profile_surname {
+        font-size: 36px;
+    }
+
+    .profile_indrate {
+        font-size: 28px;
+        margin-left: 44px;
+    }
+
+    .profile_card_names {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .profile_card {
+        grid-template-columns: 1fr;
+    }
+
+    .profile_indrate {
+        font-size: 24px;
+        margin-left: 44px;
+    }
+
+    .profile_rating {
+        margin: 44px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_modules {
+        font-size: 36px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .profile_categories {
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 12px;
+        width: 60%;
+    }
+
+    .profile_graph {
+        padding-top: 50px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .admin_create {
+        margin: 20px;
+    }
+
+    .profile_green {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_create_container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin_p {
+        margin-top: 32px;
+    }
+
+    .admin_button {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding: 12px 24px;
+    }
+
+    .profile_photo {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .admin_label {
+        font-size: 20px;
+        margin-left: 96px;
+    }
+
+    .admin_exitbutton {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .login_label {
+        font-size: 40px;
+    }
+
+    .contest_graph {
+        width: 300px;
+        height: 300px;
+    }
+
+    .logs_table {
+        width: 80%;
+    }
+
+    .logs_table table th,
+    td {
+        width: 30%;
+    }
+
+    .rate_name {
+        font-size: 14px;
+    }
+
+    .rate_num {
+        font-size: 14px;
+    }
+
+}
+
+footer {
+    background-image: url("images/background.jpg");
+    background-size: 100% auto;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer_text {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+    font-family: var(--main-font);
+}
+
+.footer_vk {
+    width: 35px;
+    height: 35px;
+    margin: 6px 0px;
+}
+
+.footer_right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    min-height: 100vh;
 }
